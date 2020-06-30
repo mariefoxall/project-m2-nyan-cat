@@ -1,0 +1,75 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#app {
+  width: 675px;
+}
+
+.hit {
+  animation: shake 0.4s ease-in-out both;
+  animation-iteration-count: 1;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+  opacity: 0.8;
+}
+
+.bonus {
+  animation: jump 0.4s ease-in-out;
+  transform: scale(1.1);
+}
+
+@keyframes jump {
+  25%,
+  75% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-2px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(3px, 0, 0);
+  }
+}
+
+/* .leveltext {
+  position: "absolute";
+  left: 100px;
+  top: 300px;
+  color: "white";
+  font: bold 30px monospace;
+  background-color: darkblue;
+  zindex: 2000;
+}
+
+.leveltextfade {
+  animation: level 1s ease-in;
+  animation-iteration-count: 1;
+}
+
+@keyframes level {
+  transform: scale(2);
+  opacity: 0;
+} */
