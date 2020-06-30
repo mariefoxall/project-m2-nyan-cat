@@ -207,6 +207,7 @@ class Engine {
           clang.play();
           newHit = true;
           console.log(this.player.lives);
+          enemy.deleteEnemy();
         }
       }
     });
@@ -251,6 +252,7 @@ class Engine {
           excellent.play();
           newBonus = true;
           console.log("bonus");
+          bonus.deleteBonus();
         }
       }
     });
