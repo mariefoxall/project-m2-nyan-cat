@@ -232,7 +232,12 @@ class Engine {
         if (
           bonus.x === this.player.x &&
           bonus.y >
-            DASHBOARD_HEIGHT + GAME_HEIGHT - PLAYER_HEIGHT - BONUS_HEIGHT - 10
+            DASHBOARD_HEIGHT +
+              GAME_HEIGHT -
+              PLAYER_HEIGHT -
+              BONUS_HEIGHT -
+              10 &&
+          bonus.y < DASHBOARD_HEIGHT + GAME_HEIGHT - 20
         ) {
           bonus.hasHitPlayer = true;
           this.player.points += 10;
