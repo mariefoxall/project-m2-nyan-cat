@@ -44,10 +44,12 @@ class Engine {
       enemy.deleteEnemy();
     });
     this.enemies = [];
-    this.bonusArray.forEach((bonus) => {
-      bonus.speedIncrease = 0.1;
-      bonus.deleteBonus();
-    });
+    if (this.bonusArray != null) {
+      this.bonusArray.forEach((bonus) => {
+        bonus.speedIncrease = 0.1;
+        bonus.deleteBonus();
+      });
+    }
     this.bonusArray = [];
     this.gameOverText.update("");
     this.player.lives = PLAYER_MAX_LIVES;
