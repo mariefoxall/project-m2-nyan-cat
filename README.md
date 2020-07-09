@@ -1,6 +1,10 @@
 # Object Oriented Programming Game Project
 
-<p align="center"><img src="./images/screenshot.png"></p>
+<p align="center"><img src="./images/screenshots/GuitarZero-screenshot1.jpg"></p>
+<p align="center"><img src="./images/screenshots/GuitarZero-screenshot2.jpg"></p>
+<p align="center"><img src="./images/screenshots/GuitarZero-screenshot3.jpg"></p>
+<p align="center"><img src="./images/screenshots/GuitarZero-screenshot4.jpg"></p>
+<p align="center"><img src="./images/screenshots/GuitarZero-screenshot5.jpg"></p>
 
 # Introduction
 
